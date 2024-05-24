@@ -3,6 +3,7 @@ import "../component/portfilio/Portfolio.css";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ecom from "../Assets/images/82528385-a73f-488f-9003-513321283a6b.png"
 import { Border } from "react-bootstrap-icons";
+import tedx from "../Assets/images/tedx-pic.png"
 import eduford from "../Assets/images/eduford.jpg"
 import dog from "../Assets/images/maxresdefault.jpg"
 import coffee from "../Assets/images/coffee.jpg"
@@ -10,6 +11,13 @@ import ox from "../Assets/images/tic-tac-toe-game-linear-2806276.jpg"
 import birds from "../Assets/images/Screenshot 2024-01-19 030548.jpg"
 
 const items = [
+  {
+    id: 1,
+    title: "TedxDAVV:ThoughtLoom",
+    img: tedx,
+    desc: "Explore TEDxDavv's captivating website, built with React.js and featuring mesmerizing animations powered by GSAP. Discover inspiring talks, learn about our speakers, and stay updated on event details. Join us in celebrating ideas worth spreading at TEDxDavv.",
+    href:"https://www.tedxdavv.in/"
+  },
   {
     id: 1,
     title: "Ecommerce Website ",
@@ -68,7 +76,7 @@ const Single = ({ item }) => {
 
 ;
 
-  const y = useTransform(scrollYProgress, [0, 1], [-250, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   
   const redirect = () => {
