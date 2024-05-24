@@ -104,6 +104,7 @@ const Contact = () => {
     <motion.div
       ref={ref}
       className="contact"
+      id="contact"
     >
       <motion.div className="textContainer">
         <motion.h1 variants={sentence}
@@ -129,7 +130,7 @@ const Contact = () => {
         </motion.div> */}
         <motion.div className="socialitem" variants={variants} animate="animate"
               initial="initial">
-            <div className="social-icon" style={{marginLeft:"100px"}}>
+            <div className="social-icon" >
               <a href="https://www.linkedin.com/in/nishant-kaushal-12b25a267/"><img src={navIcon1} alt="" /></a>
               <a href="https://github.com/nishant0708"><img src={github} alt="" /></a>
               <a href="https://leetcode.com/nishantkaushal0708/"><img src={navIcon2} alt="" /></a>

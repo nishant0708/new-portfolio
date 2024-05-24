@@ -8,9 +8,9 @@
     overflow: hidden;
     background: url(../../Assets/images/banner-bg.png);
     
-h1{
-    font-size: 80px;
-}
+
+   
+
 
 .mountains{
     background-image: url("../../Assets/images/mountains.png");
@@ -42,4 +42,23 @@ h1{
     position: absolute;
 z-index: 1;
 }
+}
+.parallax-text{
+    font-size: 80px;
+    white-space: nowrap;
+}
+@media (max-width:1280px) {
+    .parallax-text{
+        font-size: 65px;
+    }
+}
+@media (max-width:768px) {
+    .parallax-text{
+        font-size: 45px;
+    }
+}
+@media (max-width:500px) {
+    .parallax-text{
+        font-size: 24px;
+    }
 }

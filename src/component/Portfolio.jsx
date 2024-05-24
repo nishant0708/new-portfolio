@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../component/portfilio/Portfolio.css";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ecom from "../Assets/images/82528385-a73f-488f-9003-513321283a6b.png"
@@ -65,7 +65,12 @@ const Single = ({ item }) => {
    // offset: ["start start","end start"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+
+;
+
+  const y = useTransform(scrollYProgress, [0, 1], [-250, 300]);
+
+  
   const redirect = () => {
     window.location.href = item.href; // Use item.href instead of items.href
   };
@@ -79,7 +84,7 @@ const Single = ({ item }) => {
       </div>
          
           <motion.div className="textContainer" style={{y}}>
-            <h2 >{item.title}</h2>
+            <h2 classname="port-title" >{item.title}</h2>
             <p>{item.desc}</p>
             <button onClick={redirect}>See Demo</button>
           </motion.div>
@@ -105,7 +110,7 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="portfolio" id="portfolio" ref={ref}>
       <div className="pro">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>

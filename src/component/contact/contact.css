@@ -18,6 +18,7 @@
       flex-direction: column;
       margin: 50px;
       gap: 40px;
+      white-space: nowrap;
 
 
 
@@ -39,7 +40,7 @@
     .formContainer {
       flex: 1;
       position: relative;
-      padding-right: 40px;
+      
 
      
 
@@ -141,6 +142,11 @@
 .social a:hover::before {
     transform: scale(1);
 }
+.social-icon{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
 .social a img {
 	width: 40%;
 	z-index: 1;
@@ -148,4 +154,44 @@
 }
 .social a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+@media(max-width:800px){
+  .contact{
+    flex-direction: column;
+        margin-top: 0px;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+  }
+  .contact .textContainer{
+    font-size: 50px;
+    line-height: 55px;
+    white-space: nowrap;
+    margin: 10px;
+  }
+  .formContainer{
+    padding-right: 0px;
+  }
+  .social-icon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  .phoneSvg{
+   left: 0;
+   transform: translateX(-10%);
+  }
+  form{
+    width: 100%;
+    opacity: 1;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .contact input, textarea{
+    width: 400px;
+  }
+ .contact button{
+    width: 400px;
+  }
 }

@@ -16,7 +16,7 @@ const Parallax = (type) => {
 
   return (
     <div className='parallax' ref={ref} >
-        <motion.h1 style={{y:ytext}}>What I have made? </motion.h1>
+        <motion.h1  className="parallax-text" style={{y:ytext}}>What I have made? </motion.h1>
         <motion.div className='mountains'></motion.div>
         <motion.div style={{y:ybg}} className='planets'></motion.div>
         <motion.div  style={{x:ybg}}  className='stars'></motion.div>

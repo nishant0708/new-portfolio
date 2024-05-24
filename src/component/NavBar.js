@@ -7,7 +7,7 @@ import navIcon3 from '../Assets/images/nav-icon3.svg';
 import navIcon2 from '../Assets/images/download (1).svg';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Portfolio from "./Portfolio"
+
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -54,7 +54,7 @@ export const NavBar = () => {
               <a href="https://leetcode.com/nishantkaushal0708/"><img src={navIcon2} alt="" /></a>
               <a href="https://www.instagram.com/nishant0760/"><img src={navIcon3} alt="" /></a>
             </div>
-            <HashLink to='#connect'>
+            <HashLink to='/#contact'>
               <button className="vvd"><span>Let’s Connect</span></button>
             </HashLink>
           </span>

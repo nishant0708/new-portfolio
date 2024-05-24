@@ -125,7 +125,7 @@ span.navbar-text {
     align-items: center;
 }
 .social-icon {
-    display: inline-block;
+    display: flex;
     margin-left: 14px;
 }
 .social-icon a {
@@ -239,6 +239,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+.vvd{
+  white-space: nowrap;
 }
 
 /************ Banner Css ************/
